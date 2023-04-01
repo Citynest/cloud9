@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'welcmBck.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class LoginScreen extends StatelessWidget {
                       onChanged: (bool? value) {},
                     ),
                     const Text(
-                        'I am human, humans are expected to abide by Cloud9 Terms & Conditions of use and I agree'),
+                        'I am a human, humans are expected to abide by Cloud9 Terms & Conditions of use and I agree'),
                   ],
                 ),
                 const SizedBox(height: 20),
@@ -101,8 +101,7 @@ class LoginScreen extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => WelcmBckScreen()),
+                          MaterialPageRoute(builder: (context) => WelcmBck()),
                         );
                       },
                       child: const Text('Login instead'),

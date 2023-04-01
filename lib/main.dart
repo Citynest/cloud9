@@ -1,4 +1,4 @@
-import 'package:cloud9/login_screen.dart';
+import 'package:cloud9/App.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Cloud9());
@@ -92,7 +92,7 @@ class _PowerToolState extends State<PowerTool> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: ((context) => LoginScreen()),
+                          builder: ((context) => App()),
                         ));
                   },
                   child: Text('Login/Register'),

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WelcmBckScreen extends StatelessWidget {
-  const WelcmBckScreen({Key? key}) : super(key: key);
+class WelcmBck extends StatelessWidget {
+  const WelcmBck({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Welcome Back'),
+        title: const Text('Join the squad🌍'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 50),
@@ -32,18 +32,22 @@ class WelcmBckScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    // TODO: Add code to log in the user
-                  },
-                  child: const Text('Log in'),
-                ),
-                const SizedBox(height: 20),
-                TextButton(
-                  onPressed: () {
-                    // TODO: Add code to navigate to the registration screen
-                  },
-                  child: const Text('Create new account'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed: () {
+                        // TODO: Add code to handle forgot password
+                      },
+                      child: const Text('Forgot password?'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        // TODO: Add code to handle login
+                      },
+                      child: const Text('Login'),
+                    ),
+                  ],
                 ),
               ],
             ),
